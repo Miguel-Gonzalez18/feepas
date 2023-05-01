@@ -1,0 +1,124 @@
+.header_inicio, .header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    padding: .5rem 0px;
+    z-index: 1000;
+}
+.contenidoHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.header_inicio .logo h1{
+    font-size: 1.3rem;
+    color: var(--white);
+    font-family: var(--fuenteSecundaria);
+    font-style: italic;
+}
+.header .logo h1{
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+@media only screen and (min-width: 768px){
+    .header_inicio .logo h1{
+        font-size: 1.7rem;
+        color: var(--white);
+        font-family: var(--fuenteSecundaria);
+        font-style: italic;
+    }
+    .header .logo h1{
+        font-size: 1.7rem;
+        color: var(--primary);
+    }
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--white);
+    position: fixed;
+    top: 4.4rem;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    transition: .5s;
+    font-family: var(--fontPrincipal);
+}
+.nav li{
+    list-style: none;
+}
+.header_inicio .nav li a{
+    color: var(--primary);
+    text-decoration: none;
+}
+.header .nav li a{
+    color: var(--primary);
+    text-decoration: none;
+}
+@media only screen and (min-width: 768px){
+    .nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .header_inicio .nav li a{
+        color: var(--white);
+        text-decoration: none;
+    }
+}
+.header_inicio .nav li:last-child a{
+    border: 2px solid var(--primary);
+    padding: .5rem;
+    border-radius: 1.5rem;
+}
+@media only screen and (min-width: 768px){
+    .header_inicio .nav li:last-child a{
+        border: 2px solid var(--white);
+        padding: .5rem;
+        border-radius: 1.5rem;
+    }
+    .header .nav li:last-child a{
+        border: 2px solid var(--primary);
+        padding: .5rem;
+        border-radius: 1.5rem;
+    }
+    .header_inicio .nav li:last-child a:hover{
+        transition: .7s ease-in-out all;
+        background-color: var(--white);
+        color: var(--black);
+    }
+    .header .nav li:last-child a:hover{
+        transition: .7s ease-in-out all;
+        background-color: var(--primary);
+        color: var(--white);
+    }
+}
+.iconMenu{
+    display: block;
+}
+@media only screen and (min-width: 768px) {
+    .iconMenu{
+        display: none;
+    }
+}

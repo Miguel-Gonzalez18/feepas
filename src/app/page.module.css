@@ -1,229 +1,349 @@
-.main {
+.backHome{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.707398) 52.6%, rgba(0, 0, 0, 0) 100%), url(../../public/img/imgBack.png);
+    background-position: center;
+    background-size: cover;
+}
+.textoPresentacion{
+  position: relative;
+  font-family: var(--fuenteSecundaria);
+  font-style: italic;
+}
+.textoPresentacion h1{
+  color: var(--white);
+  font-size: 2.5rem;
+}
+.textoPresentacion p{
+  color: var(--white);
+  position: absolute;
+  right: 2.5rem;
+  bottom: 1rem;
+  font-family: var(--fontPrincipal);
+  font-style: normal;
+}
+@media only screen and (min-width: 768px){
+  .textoPresentacion h1{
+    color: var(--white);
+    font-size: 3rem;
+  }
+}
+
+/** Seccion perfil **/
+.perfil{
+  margin-top: 7rem;
+  padding: 0;
+  text-align: justify;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-}
-
-.description {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
-}
-
-.description a {
-  display: flex;
+  gap: 3rem;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
 }
-
-.description p {
+@media only screen and (min-width: 768px){
+  .perfil{
+    margin-top: 0;
+    padding: 7rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.contenedorFotos{
+  width: 11rem;
+  height: 13rem;
+  background-color: var(--azulClaro);
+  border-radius: 15px;
   position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
 }
-
-.code {
-  font-weight: 700;
-  font-family: var(--font-mono);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
-}
-
-.card {
-  padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
-  background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
-}
-
-.card span {
-  display: inline-block;
-  transition: transform 200ms;
-}
-
-.card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
-}
-
-.card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
-}
-
-.center::before {
-  background: var(--secondary-glow);
-  border-radius: 50%;
-  width: 480px;
-  height: 360px;
-  margin-left: -400px;
-}
-
-.center::after {
-  background: var(--primary-glow);
-  width: 240px;
-  height: 180px;
-  z-index: -1;
-}
-
-.center::before,
-.center::after {
-  content: '';
-  left: 50%;
+.foto{
+  width: 11rem;
+  height: 13rem;
+  background-image: url(../../public/img/fotoPastor.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
   position: absolute;
-  filter: blur(45px);
-  transform: translateZ(0);
+  top: -1rem;
+  right: -1rem;
 }
-
-.logo {
+.btnConoceMas{
+  margin-top: 1rem;
+  text-decoration: none;
+  padding: .6rem .8rem;
+  background: #FFFFFF;
+  border: 3px solid #001D7E;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: .5rem;
+  transition: .5s;
+}
+.btnConoceMas:hover{
+  background-color: var(--primary);
+  color: var(--white);
+}
+.perfilDescription{
+  font-family: var(--fontPrincipal);
+  line-height: 22px;
+}
+.subTitle{
+  color: var(--secundary);
+}
+/* seccion fobre la fundacion */
+.fundacionNombre{
+  margin-top: 7rem;
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--fontPrincipal);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)), url(../../public/img/fondoSobreFeepas.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+@media only screen and (min-width: 768px){
+  .fundacionNombre{
+    margin-top: 0rem;
+    padding: 5rem;
+    text-align: center;
+    font-family: var(--fontPrincipal);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.57)), url(../../public/img/fondoSobreFeepas.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
+.fundacionNombre h3{
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+.fundacionNombre span{
+  display: inline-block;
+  width: 25%;
+  height: .4rem;
+  background-color: var(--secundary);
+  border-radius: 15px;
+}
+/* seccion sobre la fundacion */
+.sobreFundacion{
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--secundary);
+}
+@media only screen and (min-width: 768px){
+  .sobreFundacion{
+    padding: 5rem;
+    text-align: center;
+    background-color: var(--secundary);
+  }
+}
+.sobreFundacion p{
+  color: var(--white);
+  font-family: var(--fontPrincipal);
+  line-height: 22px;
+}
+.btnFundacion{
+  color: var(--primary);
+  margin-top: 1rem;
+  text-decoration: none;
+  padding: .6rem .8rem;
+  background: var(--white);
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: .5rem;
+  font-family: var(--fontPrincipal);
+  transition: .5s;
+}
+.btnFundacion:hover{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*Seccion causas*/
+.seccionCausas{
   position: relative;
 }
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
 
-  .card:hover span {
-    transform: translateX(4px);
+.fondoOscuro{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px){
+  .fondoOscuro{
+    display: flex;
+    justify-content: left;
+    align-items: center;
   }
 }
-
-@media (prefers-reduced-motion) {
-  .card:hover span {
-    transform: none;
-  }
+.info{
+  width: 80%;
+  height: 50%;
+  padding: 1rem;
+  background-color: var(--secundary);
+  border-radius: 10px;
+  text-align: center;
 }
-
-/* Mobile */
-@media (max-width: 700px) {
-  .content {
-    padding: 4rem;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
+@media only screen and (min-width: 768px){
+  .info{
+    width: 40%;
+    height: auto;
+    padding: 5rem;
+    background-color: var(--secundary);
+    border-radius: 10px;
     text-align: center;
   }
-
-  .card {
-    padding: 1rem 2.5rem;
-  }
-
-  .card h2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .center {
-    padding: 8rem 0 6rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
-  .description {
-    font-size: 0.8rem;
-  }
-
-  .description a {
-    padding: 1rem;
-  }
-
-  .description p,
-  .description div {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-  }
-
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
-  }
-
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
+}
+.info p{
+  color: var(--white);
+  font-family: var(--fontPrincipal);
+  font-size: 1.5rem;
+}
+@media (min-width: 768px){
+  .info p{
+    color: var(--white);
+    font-family: var(--fontPrincipal);
+    font-size: 1.8rem;
   }
 }
-
-/* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-  .grid {
-    grid-template-columns: repeat(2, 50%);
-  }
+.info a{
+  color: var(--primary);
+  text-decoration: none;
+  padding: .6rem .8rem;
+  background: var(--white);
+  border-radius: 15px;
+  font-family: var(--fontPrincipal);
+  transition: .5s;
+  display: inline-block;
+  margin-top: 2rem;  
 }
-
-@media (prefers-color-scheme: dark) {
-  .vercelLogo {
-    filter: invert(1);
-  }
-
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
-  }
+.info a:hover{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.img1{
+  width: 100%;
+  height: 20rem;
+  background-image: url(../../public/picture/foto1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img2{
+  width: 100%;
+  height: 20rem;
+  background-image: url(../../public/picture/foto2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img3{
+  width: 100%;
+  height: 20rem;
+  background-image: url(../../public/picture/foto3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img4{
+  width: 100%;
+  height: 20rem;
+  background-image: url(../../public/picture/foto4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img5{
+  width: 100%;
+  height: 20rem;
+  background-image: url(../../public/picture/foto5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img6{
+  width: 100%;
+  height: 20rem;
+  background-image: url(../../public/picture/foto6.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img7{
+  width: 100%;
+  height: 20rem;
+  background-image: url(../../public/picture/foto7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.img8{
+  width: 100%;
+  height: 20rem;
+  background-image: url(../../public/picture/foto8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+/*Donaciones*/
+.donaciones{
+  margin-top: 1rem;
+  padding: 1rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/img/fotoDonaciones.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 231% 100% 0% 0%/50% 10% 0% 0%;
+}
+@media only screen and (min-width: 768px){
+  .donaciones{
+    margin-top: 3rem;
+    padding: 7rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../public/img/fotoDonaciones.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 231% 100% 0% 0%/50% 10% 0% 0%;
+  } 
+}
+.contenidoDonacion{
+  text-align: center;
+}
+.contenidoDonacion h3{
+  color: var(--white);
+  font-size: 1.7rem;
+  font-family: var(--fontPrincipal);
+  font-weight: normal;
+}
+.contenidoDonacion p{
+  color: var(--white);
+  font-family: var(--fontPrincipal);
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.btnDonaciones{
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+  padding: .5rem 2.5rem;
+  border: 2px solid var(--white);
+  border-radius: 15px;
+  font-family: var(--fontPrincipal);
+  transition: .5s;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 8rem;
+  margin: 0 auto;
+  gap: .5rem;
+}
+.btnDonaciones:hover{
+  background-color: var(--white);
+  color: var(--primary);
 }
