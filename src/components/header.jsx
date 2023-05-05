@@ -33,6 +33,10 @@ export default function Header() {
         })
     },[])
 
+    useEffect(()=> {
+        setMenuActivo(false)
+    },[pathname])
+
     return (
         <header className={pathname === '/' ? `${styles.header_inicio}` : `${styles.header}`}>
             <div className={`container ${styles.contenidoHeader}`}>
@@ -53,10 +57,10 @@ export default function Header() {
                             <Link href="/nosotros">Sobre nosotros</Link>
                         </li>
                         <li>
-                            <Link href="/eventos">Eventos</Link>
+                            <Link href="/eventos">Actividades</Link>
                         </li>
                         <li>
-                            <Link href="/contacto">Contacto</Link>
+                            <Link href="/#contacto">Contacto</Link>
                         </li>
                     </ul>
                 </nav>
