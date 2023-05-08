@@ -57,10 +57,10 @@ export default function Header() {
                             <Link href="/nosotros">Sobre nosotros</Link>
                         </li>
                         <li>
-                            <Link href="/eventos">Actividades</Link>
+                            <Link href="/actividades">Actividades</Link>
                         </li>
                         <li>
-                            <Link href="/#contacto">Contacto</Link>
+                            <Link href="/contacto">Contacto</Link>
                         </li>
                     </ul>
                 </nav>
