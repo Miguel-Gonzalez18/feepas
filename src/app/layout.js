@@ -1,4 +1,4 @@
-
+"use client"
 // Estilos css globales
 import './globals.css'
 // Fuentes de google fonts
@@ -7,10 +7,8 @@ import { Lobster, Outfit } from 'next/font/google'
 import Header from '@/components/header'
 import Footer from '@/components/footer'
 
-export const metadata = {
-  title: 'FEEPAS',
-  description: 'Fundación evangelismo externo: Pasión por las almas',
-}
+import { usePathname } from 'next/navigation';
+
 
 export const lobster = Lobster({
   weight: ['400'],
@@ -24,8 +22,14 @@ export const outfit = Outfit({
 })
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname()
+  console.log(pathname)
   return (
     <html lang="es">
+      <head>
+        <title>FEEPAS</title>
+        <meta name="description" content="Fundación evangelismo externo: Pasión por las almas"/>
+      </head>
       <body>
         <Header />
         {children}

@@ -1,6 +1,4 @@
 import styles from './page.module.css'
-import { lobster } from '@/app/layout'
-import { outfit } from '@/app/layout'
 
 import { BiDonateHeart } from "react-icons/bi";
 
@@ -12,8 +10,8 @@ export default function Home() {
     <main>
       <div className={styles.backHome}>
         <div className={`container ${styles.textoPresentacion}`}>
-          <h1 className={lobster.className}>Fundación <br/> evangelismo extremo: Pasión por las <br/> almas</h1>
-          <p className={outfit.className}>~Hasta allá llegaremos</p>
+          <h1>Fundación <br/> evangelismo extremo: Pasión por las <br/> almas</h1>
+          <p>~Hasta allá llegaremos</p>
         </div>
       </div>
 
