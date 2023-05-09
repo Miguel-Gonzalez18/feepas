@@ -23,11 +23,11 @@ export const outfit = Outfit({
 
 export default function RootLayout({ children }) {
   const pathname = usePathname()
-  console.log(pathname)
+  const ruta = pathname.substring(1)
   return (
     <html lang="es">
       <head>
-        <title>FEEPAS</title>
+        <title>{pathname === '/' ? 'FEEPAS - Inicio' : `FEEPAS - ${ruta}`}</title>
         <meta name="description" content="Fundación evangelismo externo: Pasión por las almas"/>
       </head>
       <body>
