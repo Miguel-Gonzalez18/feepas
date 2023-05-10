@@ -25,7 +25,7 @@ export default function Home() {
           </div>
 
           <div className={styles.perfilDescription}>
-            <h3>Erasmo Brioso Ramirez</h3>
+            <h2>Erasmo Brioso Ramirez</h2>
             <p className={styles.subTitle}>Pastor de la Iglesia Evangelistica un mensaje de Dios para el mundo y CEO de la Fundación evangelismo extremo.</p>
             <p>
             Erasmo Brioso Ramírez nació en Constanza de República Dominicana el 12 de mayo de 1976, siendo de edad de 7 años emigró juntos a sus padres y hermanos a santo domingo capital de República Dominicana hace la confesión de fe en el año 1992 a la edad de 15 año. En el año 1997 fundó la confraternidad de jóvenes de arroyo hondo, “Juventud pregoneros de justicia”, en el año 2001 es ungido cómo evangelista, luego como ministro licenciado y en el 2022 como ministro ordenado por el pastor Iderfonso Ortiz, presidente fundador del concilio Damasco pentecostal. Junto a la pastora angela Brioso funda la fundación evangelismo extremo pasión por las almas (feepas) con el eslogan “Hasta allá llegaremos”.

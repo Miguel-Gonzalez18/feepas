@@ -56,7 +56,6 @@ body::-webkit-scrollbar-thumb{
 ul.menuActivo{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 2rem;
   background-color: var(--white);
@@ -69,7 +68,9 @@ ul.menuActivo{
   margin: 0;
   transition: .5s;
 }
-
+ul.menuActivo li:first-child{
+  margin-top: 5rem;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
