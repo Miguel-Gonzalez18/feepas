@@ -342,7 +342,7 @@
   transition: .5s;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   width: 8rem;
   margin: 0 auto;
   gap: .5rem;

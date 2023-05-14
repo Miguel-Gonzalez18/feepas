@@ -44,10 +44,10 @@ export default function Home() {
           <span></span>
         </div>
         <div className={styles.sobreFundacion}>
-          <p data-aos="fade-up" data-aos-duration="1000">
+          <p>
           La Fundación Evangelismo Extremo Pasión Por Las Almas (FEEPAS), nace el 11 de octubre del año 2013, cuando el Ministerio Evangelistico Un Mensaje de Dios Para El Mundo, integrado por nueve misioneros, se dirigieron a la Cordillera Central a un campito llamado EL Limoncito el cual pertenece a Constanza.
           </p>
-          <Link data-aos="fade-up" data-aos-duration="3000" href='/nosotros' className={styles.btnFundacion}>
+          <Link href='/nosotros' className={styles.btnFundacion}>
             Conoce más
           </Link>
         </div>
@@ -56,8 +56,8 @@ export default function Home() {
       <section className={styles.seccionCausas}>
         <div className={styles.fondoOscuro}>
           <div className={styles.info}>
-            <p data-aos="fade-up" data-aos-duration="1000">¡Estamos comprometidos en servir a nuestra comunidad y a aquellos que más necesitan de nuestra ayuda!</p>
-            <Link data-aos="zoom-in-up" href='/evento' className={styles.btnCausas}>
+            <p>¡Estamos comprometidos en servir a nuestra comunidad y a aquellos que más necesitan de nuestra ayuda!</p>
+            <Link href='/evento' className={styles.btnCausas}>
               Conoce más causas
             </Link>
           </div>
@@ -76,9 +76,9 @@ export default function Home() {
 
       <section className={styles.donaciones}>
         <div className={styles.contenidoDonacion}>
-          <h3 data-aos="zoom-out-up">¡Tus aportes nos ayudan!</h3>
+          <h3>¡Tus aportes nos ayudan!</h3>
           <p>Su contribución nos permite seguir ayudando a las personas y comunidades que más lo necesitan. Con su donación, podemos llevar a cabo proyectos de construcción, programas de alimentación y nutrición, asistencia médica y de salud, y muchas otras iniciativas que mejoran la calidad de vida de las personas.</p>
-          <Link data-aos="fade-up" data-aos-duration="2000" href='/evento' className={styles.btnDonaciones}>
+          <Link href='/evento' className={styles.btnDonaciones}>
               donar <BiDonateHeart size={25} className={styles.btnIcon} />
             </Link>
         </div>

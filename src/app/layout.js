@@ -8,12 +8,8 @@ import Header from '@/components/header'
 import Footer from '@/components/footer'
 
 import { usePathname } from 'next/navigation';
+import Script from 'next/script'
 
-//Animaciones
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
 
 export const lobster = Lobster({
   weight: ['400'],
